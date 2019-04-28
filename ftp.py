@@ -9,19 +9,21 @@ import time
 CLA="\x1b[5;30;42m"
 CLV="\x1b[5;30;42m"
 CLR="\x1b[5;31;40m"
-CLC="\x1b[7;30;44m"
+CLC="\x1b[3;33;40m"
 ZR="\x1b[0m"
-print "%s\t\t///////////////////////////////////////////%s"%(CLC,ZR)
+print "%s\t\t//////////////////////////////////////////%s"%(CLC,ZR)
 print "%s\t\t///Autor:sn0b3nz correo:s4ndr01@tuta.io///%s"% (CLC,ZR)
 print "%s\t\t//////////////////////////////////////////%s"%(CLC,ZR)
 def conecion():
-     print '%sAbriendo conecion%s'%(CLA,ZR)
+     print '%sConectando dominio%s'%(CLA,ZR)
      sockets=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
      sockets.connect(("www.sitio.com",80))
      print ""
      f="i"
      if f == "i": 
-         ftp=FTP('file.sitio.com')
+         #ingresando manualmente la direccion del ftp
+         ftpl=raw_input(ftp@serve> ')
+         ftp=FTP(ftpl)
          #ftp.connect()
          print "ingrese datos"
          xfor=raw_input('user#root> ')
@@ -43,8 +45,8 @@ def conecion():
           #ejecuta si hay algun error 
 
 #llamamos al la funcion actual 
-if __name__=="__main__":
+if __name__=="__main
        #se ejecuta 
        conecion()
       #if ="i":
-          # print "[%s+%s]Error"% (CLR,ZR)
+          # print "[%s+%s]Error"% (CLR,ZR
