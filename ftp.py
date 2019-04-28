@@ -17,11 +17,11 @@ print "%s\t\t//////////////////////////////////////////%s"%(CLC,ZR)
 def conecion():
      print '%sAbriendo conecion%s'%(CLA,ZR)
      sockets=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-     sockets.connect(("www.000webhost.com",80))
+     sockets.connect(("www.sitio.com",80))
      print ""
      f="i"
      if f == "i": 
-         ftp=FTP('files.000webhost.com')
+         ftp=FTP('file.sitio.com')
          #ftp.connect()
          print "ingrese datos"
          xfor=raw_input('user#root> ')
