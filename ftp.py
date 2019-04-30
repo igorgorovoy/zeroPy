@@ -1,11 +1,11 @@
 #!/usr/lib/dev python
-#_*_coding="utf-8"_*_
+#-*- coding: "utf-8" -*-
 from ftplib import FTP
 import socket 
 import os 
-import time 
-#Creamos variables 
+import time
 
+#Creamos variables 
 CLA="\x1b[5;30;42m"
 CLV="\x1b[5;30;42m"
 CLR="\x1b[5;31;40m"
@@ -18,7 +18,6 @@ def conecion():
      print '%sConectando dominio%s'%(CLA,ZR)
      sockets=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
      sockets.connect(("www.sitio.com",80))
-     print ""
      f="i"
      if f == "i": 
          #ingresando manualmente la direccion del ftp
@@ -35,7 +34,7 @@ def conecion():
             #creamos una carpeta 
             ftp.mkd('carpeta')
          except:
-            #si ya exige entonces omite
+            #si ya exite entonces omite
             #abre carpeta  o cambia de directorios 
             ftp.cwd('carpeta')
             #muestras directorios 
