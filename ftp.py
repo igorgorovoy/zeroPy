@@ -1,4 +1,4 @@
-#!/usr/lib/dev python
+#!/usr/bin/dev python
 #-*- coding: "utf-8" -*-
 from ftplib import FTP
 import socket 
